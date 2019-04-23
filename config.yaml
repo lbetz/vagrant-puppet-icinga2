@@ -1,0 +1,71 @@
+---
+networks:
+  localdomain:
+    :address: 192.168.7.0
+machines:
+  puppet:
+    :os: Centos7
+    :cpu: 2
+    :memory: 2048
+    :net:
+      localdomain:
+        :ip: 192.168.7.2
+    :shared:
+      '~/puppetcode': /etc/puppetlabs/code/environments/production
+
+operatingsystems:
+  Centos6:
+    :family: redhat
+    :name: centos
+    :release: 6
+    :box: bento/centos-6
+  Centos7:
+    :family: redhat
+    :name: centos
+    :release: 7
+    :box: bento/centos-7
+  Fedora29:
+    :family: redhat
+    :name: fedora
+    :release: 29
+    :box: bento/fedora-29
+  Debian8:
+    :family: debian
+    :name: debian
+    :release: jessie
+    :box: bento/debian-8
+  Debian9:
+    :family: debian
+    :name: debian
+    :release: stretch
+    :box: bento/debian-9
+  Ubuntu16:
+    :family: debian
+    :name: ubuntu
+    :release: xenial
+    :box: bento/ubuntu-16.04
+  Ubuntu18:
+    :family: debian
+    :name: ubuntu
+    :release: bionic
+    :box: bento/ubuntu-18.04
+  Suse12:
+    :family: suse
+    :name: opensuse
+    :release: 12
+    :box: bento/opensuse-leap-42
+  Windows2012r2:
+    :family: windows
+    :name: windows
+    :release: 2012r2
+    :box: devopsgroup-io/windows_server-2012r2-standard-amd64-nocm
+  Windows2016:
+    :family: windows
+    :name: windows
+    :release: 2016
+    :box: jacqinthebox/windowsserver2016
+  Windows10:
+    :family: windows
+    :name: windows
+    :release: 10
+    :box: jacqinthebox/windows10LTSB

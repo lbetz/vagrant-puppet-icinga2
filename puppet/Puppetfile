@@ -1,0 +1,12 @@
+mod 'camptocamp/systemd',	'2.3.0'
+mod 'puppetlabs/inifile',	'2.5.0'
+
+mod 'puppetlabs/stdlib',	'5.2.0'
+mod 'puppetlabs/concat',	'5.3.0'
+mod 'puppetlabs/translate',	'1.2.0'
+mod 'puppetlabs/apt',		'6.3.0'
+
+mod 'theforeman/puppet',	'10.1.0'
+mod 'puppet/extlib',		'3.1.0'
+mod 'puppetlabs/puppetdb',	'7.1.0'
+mod 'puppetlabs/postgresql',	'5.12.1'

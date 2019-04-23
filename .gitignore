@@ -1,0 +1,5 @@
+deployment
+puppet/modules
+.vagrant
+.DS_Store
+*.swp
